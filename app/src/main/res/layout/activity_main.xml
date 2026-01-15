@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#B8CADC"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#061F5C"/>
+
+    <TextView
+        android:id="@+id/tvActividades"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Nombre de la actividad"
+        android:textSize="16sp"
+        android:textColor="#061F5C"/>
+
+    <EditText
+        android:id="@+id/etActividades"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12sp"
+        android:inputType="text"
+        android:textSize="12sp"
+        android:hint="Introduce la actividad(ej. Nadar, Correr...)" />
+
+    <TextView
+        android:id="@+id/tvDuracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Duración estimada (min)"
+        android:textSize="16sp"
+        android:textColor="#061F5C"/>
+
+    <EditText
+        android:id="@+id/etDuracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12sp"
+        android:inputType="text"
+        android:textSize="12sp"
+        android:hint="30" />
+
+    <TextView
+        android:id="@+id/tvTipoActividad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Tipo de actividad"
+        android:textSize="16sp"
+        android:textColor="#061F5C"/>
+
+    <EditText
+        android:id="@+id/etTipoActividad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12sp"
+        android:inputType="text"
+        android:textSize="12sp"
+        android:hint="Introduce el tipo de actividad (ej.Cardio, Fuerza...)" />
+
+    <Button
+        android:id="@+id/btnProcesar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Guardar actividad" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/tvSesiones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sesiones registradas" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvActividades"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión en Tiempo Real" />
+
+
+</LinearLayout>
